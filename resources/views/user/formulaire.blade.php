@@ -4,7 +4,7 @@
     <form class="" action="/user" method="post">
         {{ csrf_field() }}
         <div class="form-group">
-            <label for="exampleInputEmail1">firstname</label>
+            <label for="firstname">firstname</label>
             <input type="text" class="form-control" name="firstname" placeholder="firstname">
         </div>
         <div class="form-group">
