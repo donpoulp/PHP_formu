@@ -3,14 +3,20 @@
 
 <div class="row">
     <div class="col-md-6">
-        <p class="text-center">
-            <a href="/user/create">Formulaire Utilisateur</a>
-        </p>
+        <div class="jumbotron">
+            <p class="text-center">
+                <h2>Formulaire Utilisateur</h2>
+                <p><a class="btn btn-primary btn-lg" href="/user/create" role="button">Go !</a></p>
+            </p>
+        </div>
     </div>
     <div class="col-md-6">
-        <p class="text-center">
-            <a href="/news/create">Formulaire News</a>
-        </p>
+        <div class="jumbotron">
+            <p class="text-center">
+                <h2>Formulaire News</h2>
+                <p><a class="btn btn-primary btn-lg" href="/news/create" role="button">Go !</a></p>
+            </p>
+        </div>
     </div>
 </div>
 @endsection
