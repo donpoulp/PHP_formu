@@ -167,8 +167,11 @@ return [
          * Package Service Providers...
          */
 
-        //
-
+        /*
+         * Package for customer php.ini
+         */
+        Mmieluch\LaravelServeCustomIni\LaravelServeCustomIniProvider::class,
+        
         /*
          * Application Service Providers...
          */

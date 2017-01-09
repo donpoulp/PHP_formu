@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed9df8b872992035f068a7fe461a635a",
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "hash": "99f35a1168b13d9e134a7f46498aa4eb",
+    "content-hash": "ce0e240cad0c9f8f1acd470141cfcec9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2020,6 +2020,52 @@
             "time": "2015-05-11 14:41:42"
         },
         {
+            "name": "mmieluch/laravel-serve-custom-ini",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/campus-digital-grenoble/laravel-serve-custom-ini.git",
+                "reference": "e06b38b0224ace6ff12b25be3fc41b0823969058"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/campus-digital-grenoble/laravel-serve-custom-ini/zipball/e06b38b0224ace6ff12b25be3fc41b0823969058",
+                "reference": "e06b38b0224ace6ff12b25be3fc41b0823969058",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.0.x|5.1.x|5.2.x|5.3.x",
+                "illuminate/support": "5.0.x|5.1.x|5.2.x|5.3.x",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mmieluch\\LaravelServeCustomIni\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michał Mieluch",
+                    "email": "michal.mieluch@bluefroglondon.com"
+                }
+            ],
+            "description": "Replaces Laravel's \"serve\" command with an equivalent allowing the developer to specify his custom php.ini file. Comes in handy when serving locally and in need of quickly toggling Xdebug.",
+            "keywords": [
+                "cli",
+                "laravel",
+                "serve",
+                "xdebug"
+            ],
+            "support": {
+                "source": "https://github.com/campus-digital-grenoble/laravel-serve-custom-ini/tree/dev-laraval-53"
+            },
+            "time": "2016-12-16 15:33:28"
+        },
+        {
             "name": "mockery/mockery",
             "version": "0.9.6",
             "source": {
@@ -3450,7 +3496,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "mmieluch/laravel-serve-custom-ini": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
