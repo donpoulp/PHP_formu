@@ -34,15 +34,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $data = [];
-        $data['user'] = [
-            'firstname' => $request->firstname,
-            'gender' => $request->gender,
-            'newsletter' => $request->newsletter,
-            'mood' => $request->mood,
+        $data = [
+            'user' => [
+                'firstname' => $request->input('firstname'),
+                'gender' => $request->input('gender'),
+                'newsletter' => $request->input('newsletter'),
+                'mood' => $request->input('mood'),
+            ],
         ];
 
-        return view('user.result',$data);
+        return view('user.result', $data);
 
     }
 
