@@ -8,27 +8,30 @@
 
     </head>
     <body>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                <a class="navbar-brand" href="/">Formulaire</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="/user/create">Utilisateur</a></li>
-                    <li><a href="/news/create">News</a></li>
-                </ul>
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="/user/create">Utilisateur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="/news/create">News</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        <div class="container">
+
+        <div class="container mt-5">
             @yield('content')
         </div>
     </body>
