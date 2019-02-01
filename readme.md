@@ -11,7 +11,7 @@ Projet de découverte de la récupération des données d'un formulaire avec LAR
 ```
 mkdir [REPERTOIRE]
 cd [REPERTOIRE]
-git clone https://github.com/campus-digital-grenoble/PHP_Formulaire.git .
+git clone https://github.com/le-campus-numerique/PHP_Formulaire.git .
 ```
 
 ## Installation des dépendances via composer
