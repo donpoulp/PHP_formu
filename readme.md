@@ -4,9 +4,9 @@ Projet de découverte de la récupération des données d'un formulaire avec LAR
 
 ## cloner le dépot Git.
 
-/!\ ici `[REPERTOIRE]` fait référence à votre répertoire projet, pensez à parsonnaliser cette valeur /!\
+⚠️ ici `[REPERTOIRE]` fait référence à votre répertoire projet, pensez à parsonnaliser cette valeur ⚠️
 
--> Conseil : placer `[REPERTOIRE]` dans le répertoire `www` de wampserver  /!\
+-> Conseil : placer `[REPERTOIRE]` dans le Document Root de MAMP  /!\
 
 ```
 mkdir [REPERTOIRE]

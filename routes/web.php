@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\NewsController;
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user/create', 'UserController@create');
-Route::post('/user', 'UserController@store');
+Route::get('/user/create', [UserController::class, 'create']);
+Route::post('/user', [UserController::class, 'store']);
 
-Route::get('/news/create', 'NewsController@create');
+Route::get('/news/create', [NewsController::class, 'create']);
