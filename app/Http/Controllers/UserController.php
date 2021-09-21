@@ -37,6 +37,7 @@ class UserController extends Controller
         $data = [
             'user' => [
                 'firstname' => $request->input('firstname'),
+                'lastname' => $request->input('lastname'),
                 'gender' => $request->input('gender'),
                 'newsletter' => $request->input('newsletter'),
                 'mood' => $request->input('mood'),

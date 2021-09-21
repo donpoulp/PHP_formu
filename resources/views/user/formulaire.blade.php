@@ -13,6 +13,10 @@
                     <input type="text" class="form-control" name="firstname" placeholder="firstname">
                 </div>
                 <div class="form-group">
+                    <label for="lastname">lastname</label>
+                    <input type="text" class="form-control" name="lastname" placeholder="lastname">
+                </div>
+                <div class="form-group">
                     <label for="gender">Gender</label>
                     <select name="gender" class="form-control">
                         <option value="men">men</option>
@@ -24,9 +28,10 @@
                       <label>
                         <input type="checkbox" name="newsletter" value="yes"> suscribe to newsletter
                       </label>
-                    </div>
+                    </div><br>
                 </div>
                 <div class="form-group">
+                <label for="mood">LE NOMOON</label>
                     <div class="radio">
                       <label>
                         <input type="radio" name="mood" value="happy" checked>
@@ -39,7 +44,7 @@
                             Sad
                       </label>
                     </div>
-                </div>
+                </div><br>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

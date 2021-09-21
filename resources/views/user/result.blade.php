@@ -8,14 +8,23 @@
             <h3>Firstname</h3>
             <p>valeur : <b>{{ $user['firstname'] }}</b></p>
 
+            <h3>Lastname</h3>
+            <p>valeur : <b>{{ $user['lastname'] }}</b></p>
+
             <h3>Gender</h3>
             <p>valeur : <b>{{ $user['gender'] }}</b></p>
 
+
             <h3>Newsletter</h3>
-            <p>valeur : <b>{{ $user['newsletter'] }}</b></p>
+            <p>valeur : <b>
+                @if (isset($user['newsletter'])) 
+                {{ $user['newsletter'] }}</b>
+                @else
+                false</p>
+                @endif
 
             <h3>Mood</h3>
-            <p>valeur : <b><!-- A Completer --></b></p>
+            <p>valeur : <b>{{ $user['mood'] }}</b></p>
         </div>
     </div>
 
