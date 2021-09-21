@@ -10,11 +10,13 @@
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="firstname">firstname</label>
-                    <input type="text" class="form-control" name="firstname" placeholder="firstname">
+                    <input type="text" class="form-control {{ $errors->has('firstname') ? 'is-invalid' : '' }}" name="firstname" placeholder="firstname">
+                    {!! $errors->first('firstname', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="form-group">
                     <label for="lastname">lastname</label>
-                    <input type="text" class="form-control" name="lastname" placeholder="lastname">
+                    <input type="text" class="form-control {{ $errors->has('lastname') ? 'is-invalid' : '' }}" name="lastname" placeholder="lastname">
+                    {!! $errors->first('lastname', '<div class="invalid-feedback">:message</div>') !!}
                 </div>
                 <div class="form-group">
                     <label for="gender">Gender</label>
